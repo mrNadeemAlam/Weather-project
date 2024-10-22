@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="bg-[#222]">
+
+    <div class="CARD w-[90%] max-w-[470px] bg-gradient-to-tl from-cyan-300 to-pink-500 text-white mt-24 mx-auto pt-10 pb-9 text-center rounded-3xl">
+        <div class="SEARCH flex justify-evenly w-full">
+            <input class="searchBox border-0 outline-none h-14 pl-5 pr-24 rounded-3xl text-slate-600 text-xl font-semibold " type="text" placeholder="City name" spellcheck="false">
+            <button class="searchBtn text-[2.3rem]"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>  
+        <div class="weather">
+            <img class="weatherIcon ml-36 w-44" src="/images/clear.png" alt="">
+            <div class="DETAILS pl-10 font-bold">
+                <h2 class="temp text-[4rem] mr-8">--°C</h2>
+                <h2 class="city mr-8 text-3xl mb-3">CITY</h2>
+            </div>
+        </div>  
+        <hr class="w-[85%] ml-9">
+        <div class="OTHER flex justify-evenly mt-5 ">
+            <div class="humidity flex">
+                <img class="h-11 mt-5" src="images/humidity.png" alt="">
+                <div class="humidValue ml-4">
+                    <p class="humidityValue text-[2rem]">--%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="Wind flex">
+                <img class="h-11 mt-4" src="images/wind.png" alt="">
+                <div class="windValue ml-4">
+                    <p class="windSpeed text-[2rem]">--km/h</p>
+                    <p>Wind Speed</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+
+</body>
+</html>
